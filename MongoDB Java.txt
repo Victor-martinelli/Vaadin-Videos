@@ -1,0 +1,3 @@
+Encontrar documentos con java en mongo: https://www.mkyong.com/mongodb/java-mongodb-query-document/
+
+Actualizar documentos con java en mongo: https://www.mkyong.com/mongodb/java-mongodb-update-document/

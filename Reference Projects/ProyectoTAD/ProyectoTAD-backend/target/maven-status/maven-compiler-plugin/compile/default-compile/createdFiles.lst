@@ -1,0 +1,6 @@
+com\mycompany\proyectotad\samples\backend\data\Category.class
+com\mycompany\proyectotad\samples\backend\mock\MockDataGenerator.class
+com\mycompany\proyectotad\samples\backend\data\Availability.class
+com\mycompany\proyectotad\samples\backend\data\Product.class
+com\mycompany\proyectotad\samples\backend\DataService.class
+com\mycompany\proyectotad\samples\backend\mock\MockDataService.class
