@@ -1,1 +1,0 @@
-curl -X POST -u Vicbomlen --data-binary @"ROOT.war" https://proyectotad2019grupo1.scm.azurewebsites.net/api/wardeploy

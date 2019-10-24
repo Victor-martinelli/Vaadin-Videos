@@ -1,0 +1,1 @@
+$wnd.com_mycompany_proyectotad_MyAppWidgetset.runAsyncCallback2('a0b(1739,1,Bjh);_.Igb=function S8d(){this.Jgb(this.b)};_.Jgb=function T8d(a){this.Kgb(a)};_.Kgb=function U8d(a){};_.Hf=function W8d(){this.Igb();x3g.jHd().P7(this.a.Oc())};l2g(Fs)(2);\n//# sourceURL=com.mycompany.proyectotad.MyAppWidgetset-2.js\n')

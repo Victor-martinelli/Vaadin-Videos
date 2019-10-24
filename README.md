@@ -1,67 +1,48 @@
-ProyectoTAD
-==============
+# Vaadin Videos
 
-Template for a full-blown Vaadin application that only requires a Servlet 3.0 container to run (no other JEE dependencies).
-
-
-Project Structure
-=================
-
-The project consists of the following three modules:
-
-- parent project: common metadata and configuration
-- ProyectoTAD-widgetset: widgetset, custom client side code and dependencies to widget add-ons
-- ProyectoTAD-ui: main application module, development time
-- ProyectoTAD-production: module that produces a production mode WAR for deployment
-
-The production mode module recompiles the widgetset (obfuscated, not draft), activates production mode for Vaadin with a context parameter in web.xml and contains a precompiled theme. The ui module WAR contains an unobfuscated widgetset, and is meant to be used at development time only.
-
-Workflow
-========
-
-To compile the entire project, run "mvn install" in the parent project.
-
-Other basic workflow steps:
-
-- getting started
-- compiling the whole project
-  - run "mvn install" in parent project
-- developing the application
-  - edit code in the ui module
-  - run "mvn jetty:run" in ui module
-  - open http://localhost:8080/
-- client side changes or add-ons
-  - edit code/POM in widgetset module
-  - run "mvn install" in widgetset module
-  - if a new add-on has an embedded theme, run "mvn vaadin:update-theme" in the ui module
-- debugging client side code
-  - run "mvn vaadin:run-codeserver" in widgetset module
-  - activate Super Dev Mode in the debug window of the application
-- creating a production mode war
-  - run "mvn -Pproduction package" in the production mode module or in the parent module
-- testing the production mode war
-  - run "mvn -Pproduction jetty:run-war" in the production mode module
+<p align="center">
+  <img width="200em" src="https://github.com/Victor-martinelli/Vaadin-Videos/blob/master/proyectoTADGrupo1/src/main/webapp/logo.png">
+</p>
 
 
-Developing a theme using the runtime compiler
--------------------------
+## Project Description
+Designed, implemented and deployed a Responsive REST Java Learning Management System that utilizes a MySQL database and follows an MVC pattern. The entire project was organized on a GitHub repository with different branches for the team members and the entire View logic was written in Struts2. Whiteboard allows students to view and download slides from different classes, check their grades and turn in projects. Teachers can also upload new slides, check which students have registered to their class, create a new project, download the projects that have been turned in and grade the uploaded projects. Administrators can also perform CRUD operations on classes, teachers, classrooms and students.
 
-When developing the theme, Vaadin can be configured to compile the SASS based
-theme at runtime in the server. This way you can just modify the scss files in
-your IDE and reload the browser to see changes.
+## Technologies Used
+* HTML
+* CSS
+* JSP
+* Java
+* JQuery
+* MySQL
+* REST
+* GitHub
+* Struts2
 
-To use on the runtime compilation, open pom.xml of your UI project and comment 
-out the compile-theme goal from vaadin-maven-plugin configuration. To remove 
-an existing pre-compiled theme, remove the styles.css file in the theme directory.
+## Documentation
 
-When using the runtime compiler, running the application in the "run" mode 
-(rather than in "debug" mode) can speed up consecutive theme compilations
-significantly.
+The project's documentation can be found inside the "[Documentation](https://github.com/Victor-martinelli/Whiteboard/tree/master/Documentation)" folder.
 
-The production module always automatically precompiles the theme for the production WAR.
+## Source Code
+The project's source code can be found inside the "[Whiteboard](https://github.com/Victor-martinelli/Whiteboard/tree/master/WhiteBoard)" and "[Whiteboard_REST](https://github.com/Victor-martinelli/Whiteboard/tree/master/Whiteboard_REST)" folders. Everything that is needed to deploy the application is inside the folders. It's also important to note that the server files are inside "[Whiteboard/web/files](https://github.com/Victor-martinelli/Whiteboard/tree/master/WhiteBoard/web/files)" folders inside
 
-Using Vaadin pre-releases
--------------------------
+## Screenshots
 
-If Vaadin pre-releases are not enabled by default, use the Maven parameter
-"-P vaadin-prerelease" or change the activation default value of the profile in pom.xml .
+<p align="center">
+  <img width="1200em" src="https://github.com/Victor-martinelli/Whiteboard/blob/master/Screenshots/1.png">
+</p>
+<p align="center">
+  <img width="1200em" src="https://github.com/Victor-martinelli/Whiteboard/blob/master/Screenshots/2.png">
+</p>
+<p align="center">
+  <img width="1200em" src="https://github.com/Victor-martinelli/Whiteboard/blob/master/Screenshots/3.png">
+</p>
+<p align="center">
+  <img width="1200em" src="https://github.com/Victor-martinelli/Whiteboard/blob/master/Screenshots/4.png">
+</p>
+<p align="center">
+  <img width="1200em" src="https://github.com/Victor-martinelli/Whiteboard/blob/master/Screenshots/5.png">
+</p>
+<p align="center">
+  <img width="1200em" src="https://github.com/Victor-martinelli/Whiteboard/blob/master/Screenshots/6.png">
+</p>
